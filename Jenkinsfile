@@ -7,7 +7,7 @@ pipeline {
                 bat '''
                 cd ${WORKSPACE}
                 pip install pytest
-                pytest -m 'Sanity'
+                pytest -m "Sanity"
                 '''
             }
         }
