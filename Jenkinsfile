@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Testing') {
             steps {
-                sh '''
+                bat '''
                 ls
                 cd ${WORKSPACE}
                 pip install pytest
