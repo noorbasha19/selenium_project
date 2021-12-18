@@ -5,9 +5,9 @@ pipeline {
         stage('Testing') {
             steps {
                 bat '''
-                ls
                 cd ${WORKSPACE}
                 pip install pytest
+                pytest -m 'Sanity'
                 '''
             }
         }
