@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('Run') {
             steps {
-                sh 'pip install pytest'
+                echo 'hello world '
+                sh 'python pip install pytest'
             }
         }
     }
