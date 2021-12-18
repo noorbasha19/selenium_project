@@ -6,7 +6,8 @@ pipeline {
         stage('Run') {
 
             steps {
-                pytest test_methods.py
+                pip install pytest
+                pytest -m 'Sanity'
             }
         }
     }
