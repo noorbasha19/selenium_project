@@ -6,8 +6,8 @@ pipeline {
         stage('Run') {
 
             steps {
-                pip install pytest
-                pytest -m 'Sanity'
+                sh 'pip install pytest'
+                sh 'pytest -m "Sanity"'
             }
         }
     }
