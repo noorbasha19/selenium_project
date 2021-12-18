@@ -1,16 +1,16 @@
 pipeline {
-
     agent any
-        docker {
-            image 'python:3.8'
-        }
+
     stages {
-        stage('Run') {
+        stage('Testing') {
             steps {
                 sh '''
-                    pip
+                ls
+                cd ${WORKSPACE}
+                pip install pytest
                 '''
             }
         }
+
     }
 }
